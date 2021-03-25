@@ -1,0 +1,18 @@
+grumphp:
+  tasks:
+    phpcsfixer2:
+      config: .php_cs
+    # eslint:
+    #       bin: node_modules/.bin/eslint
+    #       triggered_by: [js, jsx, ts, tsx, vue]
+    #       whitelist_patterns:
+    #           - /^resources\/js\/(.*)/
+    #       config: .eslintrc.json
+    #       debug: false
+    #       format: ~
+    #       max_warnings: ~
+    #       no_eslintrc: false
+    #       quiet: false
+    # phpstan:
+    #   configuration: phpstan.neon
+    #   use_grumphp_paths: false
