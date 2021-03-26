@@ -24,7 +24,7 @@ class Transaction extends Model
     ];
 
     /**
-     * Mendapatkan user yang telah melakukan transaksi
+     * Mendapatkan user yang telah melakukan transaksi.
      * @see https://laravel.com/docs/8.x/eloquent-relationships#one-to-one-defining-the-inverse-of-the-relationship
      */
     public function user()
@@ -33,7 +33,7 @@ class Transaction extends Model
     }
 
     /**
-     * Mendapatkan data food lebih lengkap dengan menggunakan food_id
+     * Mendapatkan data food lebih lengkap dengan menggunakan food_id.
      */
     public function food()
     {

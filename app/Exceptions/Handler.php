@@ -40,7 +40,7 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Tambahkan sentry di sini
+     * Tambahkan sentry di sini.
      */
     public function report(Throwable $exception)
     {
