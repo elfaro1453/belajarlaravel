@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Validator;
+use App\Actions\Fortify\PasswordValidationRules;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use App\Actions\Fortify\PasswordValidationRules;
+use Validator;
 
 class UserController extends Controller
 {
     use PasswordValidationRules;
+
     /**
-     * Membuat fungsi register user untuk API
+     * Membuat fungsi register user untuk API.
      */
     public function apiRegister(Request $request)
     {
@@ -52,17 +53,19 @@ class UserController extends Controller
 
         // buat returnData berisi semua data yang akan ditampilkan
         $returnData = \compact('user', 'token');
+
         return response()->json($returnData, 200);
     }
 
     /**
-     * Membuat fungsi user login untuk API
+     * Membuat fungsi user login untuk API.
      * @see https://laravel.com/docs/8.x/requests#retrieving-all-input-data
-    */
+     */
     public function apiLogin(Request $request)
     {
         $input = $request->all();
         $data = \compact('input');
+
         return response()->json($data, 200);
     }
 }

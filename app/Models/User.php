@@ -64,7 +64,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * Membuat fungsi untuk mendapatkan semua transaksi yang dibuat oleh user
+     * Membuat fungsi untuk mendapatkan semua transaksi yang dibuat oleh user.
      */
     public function transactions()
     {
@@ -72,7 +72,7 @@ class User extends Authenticatable
     }
 
     /**
-     * Membuat fungsi untuk mendapatkan semua food yang telah dibuat oleh user
+     * Membuat fungsi untuk mendapatkan semua food yang telah dibuat oleh user.
      */
     public function foods()
     {

@@ -26,7 +26,7 @@ class Food extends Model
     ];
 
     /**
-     * Membuat fungsi untuk mendapatkan user yang telah membuat food ini
+     * Membuat fungsi untuk mendapatkan user yang telah membuat food ini.
      */
     public function user()
     {
