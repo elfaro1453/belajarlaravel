@@ -50,8 +50,4 @@ jobs:
             - name: Run Grumphp
               run: php vendor/bin/grumphp run --no-interaction
             # - run: npm run eslint
-            - name: Laravel PHPUnit
-              run: |
-                cp .env.example .env
-                php artisan key:generate
-                php vendor/bin/phpunit
+
