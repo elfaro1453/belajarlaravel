@@ -62,4 +62,20 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    /**
+     * Membuat fungsi untuk mendapatkan semua transaksi yang dibuat oleh user
+     */
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class);
+    }
+
+    /**
+     * Membuat fungsi untuk mendapatkan semua food yang telah dibuat oleh user
+     */
+    public function foods()
+    {
+        return $this->hasMany(Food::class);
+    }
 }

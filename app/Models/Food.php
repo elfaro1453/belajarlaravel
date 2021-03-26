@@ -16,6 +16,7 @@ class Food extends Model
      */
     protected $fillable = [
         'name',
+        'user_id',
         'descriptions',
         'ingredients',
         'price',
@@ -23,4 +24,12 @@ class Food extends Model
         'type',
         'picture_path',
     ];
+
+    /**
+     * Membuat fungsi untuk mendapatkan user yang telah membuat food ini
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
