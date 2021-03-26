@@ -1,62 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Cara Clone Project ini di localhost anda
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Pastikan versi php yang telah terinstall di komputer anda adalah minimal versi 7.4, silahkan cek di command line dengan menjalankan kode berikut di command line:
 
-## About Laravel
+```php
+php --version
+```
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Jika versi PHP anda di bawah 7.4, update php ke versi terbaru.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Kemudian cek versi composer dari command line :
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+```php
+composer --version
+```
 
-## Learning Laravel
+hasilnya ada versi composer yang telah terinstall pada komputer anda, minimal versi composer yang mendukung Laravel adalah versi 2, jika command tidak ditemukan, silahkan install terlebih dahulu composernya, jika versi composer masih menggunakan versi 1 maka install versi 2 atau yang lebih baru.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Selanjutnya cek versi nodejs, versi yang didukung adalah minimal versi 14, jika nodejs belum terinstall atau masih menggunakan versi yang lama, maka install versi terbaru.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```php
+node --version
+```
 
-## Laravel Sponsors
+Jika tools telah terinstall dengan baik, maka selanjutnya adalah mengcopy project ini ke dalam localhost anda.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Pada command line / terminal, git clone repository ini di workfolder anda, semisal di dalam folder htdocs
 
-### Premium Partners
+```php
+git clone https://github.com/elfaro1453/belajarlaravel.git laravel
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+Kemudian masuk ke folder yang telah dibuat tadi
 
-## Contributing
+```php
+cd laravel
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Pada finder atau explorer, copy .env.example, paste dengan nama .env saja.
 
-## Code of Conduct
+pada command line jalankan perintah berikut :
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```php
+php artisan key:generate
+composer install
+npm install
+npm run dev
+```
