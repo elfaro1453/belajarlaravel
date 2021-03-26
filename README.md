@@ -46,3 +46,19 @@ composer install
 npm install
 npm run dev
 ```
+
+Buat database dan sesuaikan file .env dengan database yang telah anda buat.
+
+Setelah itu jalankan perintah berikut untuk membuat tabel database
+
+```php
+php artisan migrate
+```
+
+Jalankan server laravel
+
+```php
+php artisan serve
+```
+
+buka `http://localhost:8000` untuk membuka laravel yang telah dijalankan.
